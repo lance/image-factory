@@ -72,7 +72,7 @@ jobs:
           image: securesign/rekor
           tags: latest ${{ github.sha }} release-next
           containerfiles: |
-            ./Dockerfile
+            ./rekor/Dockerfile
 
       - name: Push To quay.io
         id: push-to-quay
